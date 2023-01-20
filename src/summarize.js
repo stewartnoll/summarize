@@ -6,7 +6,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 function generatePrompt(input) {
-  return `Generat a commit message for the following changes.
+  return `Generate a commit message for the following changes.
           ${input}`;
 }
 

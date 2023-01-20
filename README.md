@@ -8,7 +8,7 @@ install deps:
 npm i
 ```
 
-add your [OpenApi Key](https://beta.openai.com/account/api-keys) to a .env file
+add your [OpenAI Api Key](https://beta.openai.com/account/api-keys) to a .env file
 
 ```
 OPENAI_API_KEY=
