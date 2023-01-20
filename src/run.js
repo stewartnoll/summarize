@@ -1,8 +1,5 @@
+require("dotenv").config();
 const { summarize } = require("./summarize");
-
-// function sayHello(name) {
-//   console.log("Hello " + name);
-// }
 
 function getInput() {
   return new Promise(function (resolve, reject) {
