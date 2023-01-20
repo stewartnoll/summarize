@@ -1,4 +1,5 @@
-import { Configuration, OpenAIApi } from "openai";
+require("dotenv").config();
+const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -10,7 +11,7 @@ function generatePrompt(input) {
           ${input}`;
 }
 
-export default async function summarize(input) {
+async function summarize(input) {
   try {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
@@ -26,3 +27,5 @@ export default async function summarize(input) {
     }
   }
 }
+
+exports.summarize = summarize;
